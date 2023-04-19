@@ -1,4 +1,5 @@
 "use strict";
+import "../sass/main.scss";
 
 const accordion = document.querySelector(".accordions");
 
@@ -6,8 +7,9 @@ accordion.addEventListener("click", function (event) {
   const wrapper = event.target.closest(".question-wrapper");
   if (!wrapper) return;
 
-  const arrowIcon = wrapper.childNodes[1];
-  const ques = wrapper.childNodes[3];
+  const innerElements = Array.from(wrapper.childNodes);
+  const arrowIcon = innerElements.find((el) => el.className === "arrow-icon");
+  const ques = innerElements.find((el) => el.className === "question");
   const ans = wrapper.nextElementSibling;
 
   if (ans.style.maxHeight) {

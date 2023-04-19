@@ -33,7 +33,7 @@
 
     .bg-pattern {
       @media screen and (min-width: $bp-breakpoint) {
-        content: url(../src/images/bg-pattern-desktop.svg);
+        content: url(../images/bg-pattern-desktop.svg);
 
         transform: translateY(-5rem) translateX(-19rem) scale(1.7);
       }
@@ -54,7 +54,7 @@
       transform: translateX(-50%);
 
       @media screen and (min-width: $bp-breakpoint) {
-        content: url(../src/images/illustration-woman-online-desktop.svg);
+        content: url(../images/illustration-woman-online-desktop.svg);
 
         position: relative;
         left: 30%;

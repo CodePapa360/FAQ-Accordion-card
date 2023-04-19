@@ -20,7 +20,7 @@
 
 <a align="center" href="https://faq-accordion-card-alamin.netlify.app/">
 
-<img src="./screenshots/"/>
+<img src="./screenshots/faq-accordion-card-screenshot-desktop.png"/>
 </a>
 
 ## The challenge
