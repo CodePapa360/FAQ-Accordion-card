@@ -16,5 +16,4 @@
 ###############################################
 dist
 css
-.parcel-cache
 node_modules
