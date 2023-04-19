@@ -1,0 +1,61 @@
+.accordion-section {
+  @media screen and (min-width: $bp-breakpoint) {
+    padding: 4rem 4rem 4rem 0;
+  }
+
+  &__heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+
+    @media screen and (min-width: $bp-breakpoint) {
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .accordion-wrapper {
+    position: relative;
+
+    hr {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-width: 1px;
+      border-color: var(--light-grayish-blue);
+      margin: 0;
+    }
+
+    .question-wrapper {
+      cursor: pointer;
+      padding-right: 1.1rem;
+
+      .arrow-icon {
+        position: absolute;
+        right: 0;
+        top: 1.5rem;
+        transform: rotate(0deg);
+        transition: transform 0.5s ease;
+      }
+
+      .question {
+        font-size: 1.1rem;
+        font-weight: 400;
+        padding: 1rem 0;
+        user-select: none;
+        color: var(--very-dark-desaturated-blue);
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: var(--soft-red);
+        }
+      }
+    }
+
+    .answer {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.5s ease, margin-bottom 0.1s ease;
+    }
+  }
+}

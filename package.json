@@ -1,0 +1,12 @@
+{
+  "name": "faq-accordion-card",
+  "version": "1.0.0",
+  "description": "FAQ Accordion Card",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Alamin",
+  "license": "MIT"
+}

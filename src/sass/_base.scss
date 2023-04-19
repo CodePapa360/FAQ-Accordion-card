@@ -1,0 +1,71 @@
+:root {
+  // Colors
+  --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --soft-red: hsl(14, 88%, 65%);
+  --very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --dark-grayish-blue: hsl(240, 6%, 50%);
+  --light-grayish-blue: hsl(240, 5%, 91%);
+
+  // Gradient
+  --soft-violet: hsl(273, 75%, 66%);
+  --soft-blue: hsl(240, 73%, 65%);
+
+  //Added
+  --orange: #14f500;
+  --white: white;
+}
+
+$bp-breakpoint: 850px;
+
+html {
+  font-size: 12px;
+
+  @media screen and (min-width: $bp-breakpoint) {
+    font-size: 14px;
+  }
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  color: var(--white);
+
+  background: linear-gradient(to bottom, var(--soft-violet), var(--soft-blue));
+  background-repeat: no-repeat;
+
+  min-height: 100vh; //incase dvh is not supported
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+
+  @media screen and (min-width: $bp-breakpoint) {
+    padding: 0 4rem;
+  }
+}
+
+.main {
+  margin: auto;
+  max-width: 450px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 2rem;
+
+  background-color: var(--white);
+  color: var(--very-dark-grayish-blue);
+  border-radius: 20px;
+  margin-top: 10rem;
+  padding: 0 2rem 2rem;
+
+  @media screen and (min-width: $bp-breakpoint) {
+    grid-template-columns: 1fr 1fr;
+    max-width: 850px;
+    padding: 0;
+    gap: 1rem;
+  }
+}
+
+.footer {
+  margin-top: auto;
+}

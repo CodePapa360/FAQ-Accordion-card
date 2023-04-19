@@ -1,0 +1,64 @@
+.illustration {
+  position: relative;
+
+  @media screen and (min-width: $bp-breakpoint) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box-desktop {
+    display: none;
+    position: absolute;
+    left: -7.7rem;
+    top: 50%;
+    transform: translateY(-30%) scale(0.8);
+
+    z-index: 3;
+
+    @media screen and (min-width: $bp-breakpoint) {
+      display: block;
+    }
+  }
+
+  .pattern-image {
+    @media screen and (min-width: $bp-breakpoint) {
+      overflow: hidden;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .bg-pattern {
+      @media screen and (min-width: $bp-breakpoint) {
+        content: url(../src/images/bg-pattern-desktop.svg);
+
+        transform: translateY(-5rem) translateX(-19rem) scale(1.7);
+      }
+    }
+  }
+
+  .woman-image {
+    @media screen and (min-width: $bp-breakpoint) {
+      overflow: hidden;
+      position: absolute;
+    }
+
+    .illustration-woman {
+      position: absolute;
+      width: 100%;
+      bottom: 30%;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @media screen and (min-width: $bp-breakpoint) {
+        content: url(../src/images/illustration-woman-online-desktop.svg);
+
+        position: relative;
+        left: 30%;
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+:root.dark-mode {
+  // Primary
+  --blue: hsl(223, 56%, 41%);
+
+  // Neutral
+  --gray: hsl(0, 0%, 99%);
+  --very-dark-blue: hsl(209, 48%, 56%);
+
+  //Added
+  --white: rgb(19, 19, 22);
+  --success: #00d856;
+  --contrast: 10%;
+}
+
+.dark-mode-container {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+
+  .dark-mode-checkbox {
+    display: none;
+  }
+
+  .dark-mode-lebel {
+    > * {
+      user-select: none;
+    }
+
+    --sh-height: 1.7rem;
+    --border: calc(var(--sh-height) / 15);
+    position: relative;
+    width: calc(var(--sh-height) * 2);
+    height: var(--sh-height);
+    background-color: #090831;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 99999px;
+    border: var(--border) solid rgb(56, 68, 122);
+    padding: 0 1px;
+    box-shadow: 0 0 10px rgba(24, 27, 48, 0.3);
+    cursor: pointer;
+
+    > img {
+      height: calc(var(--sh-height) - 0.5rem);
+      width: calc(var(--sh-height) - 0.5rem);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0%;
+      width: var(--sh-height);
+      height: calc(var(--sh-height) - var(--border) - var(--border));
+      border-radius: 99999px;
+      background-color: #d4dbfd;
+      transition: left 0.2s ease-in-out;
+      border: var(--border) solid #6770ee;
+    }
+  }
+
+  .dark-mode-checkbox:checked ~ .dark-mode-lebel::before {
+    left: calc(100% - var(--sh-height));
+  }
+}
