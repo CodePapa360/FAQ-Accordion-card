@@ -6,7 +6,7 @@
       🚀 Live Site
     </a>
     |
-    <a href="">
+    <a href="https://www.frontendmentor.io/solutions/responsive-faq-accordion-card-w-dark-mode-4UZpBqL6rC">
       💡 Solution
     </a>
   </h5>
