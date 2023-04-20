@@ -1,4 +1,4 @@
-<h1 align="center">FAQ accordion card</h1>
+<h1 align="center">FAQ Accordion Card</h1>
 
 <div align="center">
   <h3>
@@ -48,7 +48,7 @@ Specifically, I learned how to use the max-height property in CSS to create smoo
 
 I also practiced my JavaScript skills, particularly in terms of manipulating the DOM and responding to user events.
 
-Overall, this project challenged me to think creatively and problem-solve in order to create a functional and aesthetically pleasing FAQ accordion card.
+Overall, this project challenged me to think creatively and problem-solve in order to create a functional and aesthetically pleasing FAQ Accordion card.
 
 ## Installation
 
@@ -91,4 +91,4 @@ I would like to express my gratitude to Frontend Mentor for providing this proje
 
 ## License
 
-This project is licensed under the [MIT](https://github.com/CodePapa360/FAQ-accordion-card/blob/main/LICENSE.md) license, which means you can use, modify, and distribute the code as you wish. If you have any questions or feedback, feel free to reach out. Thank you for considering my code!
+This project is licensed under the [MIT](https://github.com/CodePapa360/FAQ-Accordion-card/blob/main/LICENSE.md) license, which means you can use, modify, and distribute the code as you wish. If you have any questions or feedback, feel free to reach out. Thank you for considering my code!
