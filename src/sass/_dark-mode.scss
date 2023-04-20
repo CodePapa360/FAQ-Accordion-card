@@ -25,7 +25,7 @@
     --clr-bg: linear-gradient(to top, violet, rgb(55, 137, 170));
     --clr-border: #ffffff;
     --clr-shadow: rgba(24, 27, 48, 0.8);
-    --sh-height: 2.5rem;
+    --sh-height: 5rem;
     --border: calc(var(--sh-height) / 8);
     position: relative;
     display: block;
@@ -38,12 +38,11 @@
     cursor: pointer;
 
     &::before {
+      content: "";
+      display: inline-block;
+      background: url(../images/icon-light.svg) no-repeat center / 80%;
       --clr-circle: #4343ff;
       --circle: calc(var(--sh-height) - var(--border) * 2);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      content: url(../images/icon-light.svg);
       position: absolute;
       top: 50%;
       left: 0%;
@@ -53,12 +52,12 @@
       height: var(--circle);
       border-radius: 99999px;
       background-color: var(--clr-circle);
-      transition: all 0.2s ease-in-out;
+      transition: left 0.2s ease-in-out, transform 0.5s ease-in-out;
     }
   }
 
   .dark-mode-checkbox:checked ~ .dark-mode-lebel::before {
-    content: url(../images/icon-dark.svg);
+    background-image: url(../images/icon-dark.svg);
 
     --clr-circle: #2c2cd8;
     left: calc(100% - var(--circle));
