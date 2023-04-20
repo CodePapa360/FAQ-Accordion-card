@@ -2,6 +2,9 @@
 import "../sass/main.scss";
 
 const accordion = document.querySelector(".accordions");
+//dark mode veriables
+const darkModeToggle = document.getElementById("dark-mode-checkbox");
+const root = document.documentElement;
 
 accordion.addEventListener("click", function (event) {
   const wrapper = event.target.closest(".question-wrapper");
@@ -24,3 +27,15 @@ accordion.addEventListener("click", function (event) {
     ques.style.fontWeight = "700";
   }
 });
+
+//dark mode feature
+const darkMode = function () {
+  if (darkModeToggle.checked === true) {
+    root.classList.add("dark-mode");
+  } else {
+    root.classList.remove("dark-mode");
+  }
+};
+
+darkModeToggle.addEventListener("change", darkMode);
+window.addEventListener("load", darkMode);

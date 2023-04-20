@@ -76,119 +76,125 @@
     <title>FAQ Accordion Card | Frontend Mentor | Alamin</title>
   </head>
   <body>
-    <div class="top-container">
-      <main class="main">
-        <div class="illustration">
+    <main class="main">
+      <div class="dark-mode-container">
+        <input
+          type="checkbox"
+          class="dark-mode-checkbox"
+          id="dark-mode-checkbox"
+        />
+        <label for="dark-mode-checkbox" class="dark-mode-lebel"></label>
+      </div>
+      <div class="illustration">
+        <img
+          class="box-desktop"
+          src="./images/illustration-box-desktop.svg"
+          alt="Box image"
+        />
+        <div class="pattern-image">
           <img
-            class="box-desktop"
-            src="./images/illustration-box-desktop.svg"
-            alt="Box image"
+            class="bg-pattern"
+            src="./images/bg-pattern-mobile.svg"
+            alt="Background pattern"
           />
-          <div class="pattern-image">
-            <img
-              class="bg-pattern"
-              src="./images/bg-pattern-mobile.svg"
-              alt="Background pattern"
-            />
-          </div>
-
-          <div class="woman-image">
-            <img
-              class="illustration-woman"
-              src="./images/illustration-woman-online-mobile.svg"
-              alt="Women online image"
-            />
-          </div>
         </div>
 
-        <section class="accordion-section">
-          <h1 class="accordion-section__heading">FAQ</h1>
+        <div class="woman-image">
+          <img
+            class="illustration-woman"
+            src="./images/illustration-woman-online-mobile.svg"
+            alt="Women online image"
+          />
+        </div>
+      </div>
 
-          <div class="accordions">
-            <div class="accordion-wrapper">
-              <div class="question-wrapper">
-                <img
-                  class="arrow-icon"
-                  src="./images/icon-arrow-down.svg"
-                  alt="Arrow icon"
-                />
-                <h2 class="question">How many team members can I invite?</h2>
-              </div>
+      <section class="accordion-section">
+        <h1 class="accordion-section__heading">FAQ</h1>
 
-              <p class="answer">
-                You can invite up to 2 additional users on the Free plan. There
-                is no limit on team members for the Premium plan.
-              </p>
-              <hr />
+        <div class="accordions">
+          <div class="accordion-wrapper">
+            <div class="question-wrapper">
+              <img
+                class="arrow-icon"
+                src="./images/icon-arrow-down.svg"
+                alt="Arrow icon"
+              />
+              <h2 class="question">How many team members can I invite?</h2>
             </div>
 
-            <div class="accordion-wrapper">
-              <div class="question-wrapper">
-                <img
-                  class="arrow-icon"
-                  src="./images/icon-arrow-down.svg"
-                  alt="Arrow icon"
-                />
-                <h2 class="question">What is the maximum file upload size?</h2>
-              </div>
-              <p class="answer">
-                No more than 2GB. All files in your account must fit your
-                allotted storage space.
-              </p>
-              <hr />
-            </div>
-
-            <div class="accordion-wrapper">
-              <div class="question-wrapper">
-                <img
-                  class="arrow-icon"
-                  src="./images/icon-arrow-down.svg"
-                  alt="Arrow icon"
-                />
-                <h2 class="question">How do I reset my password?</h2>
-              </div>
-              <p class="answer">
-                Click “Forgot password” from the login page or “Change password”
-                from your profile page. A reset link will be emailed to you.
-              </p>
-              <hr />
-            </div>
-
-            <div class="accordion-wrapper">
-              <div class="question-wrapper">
-                <img
-                  class="arrow-icon"
-                  src="./images/icon-arrow-down.svg"
-                  alt="Arrow icon"
-                />
-                <h2 class="question">Can I cancel my subscription?</h2>
-              </div>
-              <p class="answer">
-                Yes! Send us a message and we’ll process your request no
-                questions asked.
-              </p>
-              <hr />
-            </div>
-
-            <div class="accordion-wrapper">
-              <div class="question-wrapper">
-                <img
-                  class="arrow-icon"
-                  src="./images/icon-arrow-down.svg"
-                  alt="Arrow icon"
-                />
-                <h2 class="question">Do you provide additional support?</h2>
-              </div>
-              <p class="answer">
-                Chat and email support is available 24/7. Phone lines are open
-                during normal business hours.
-              </p>
-              <hr />
-            </div>
+            <p class="answer">
+              You can invite up to 2 additional users on the Free plan. There is
+              no limit on team members for the Premium plan.
+            </p>
+            <hr />
           </div>
-        </section>
-      </main>
-    </div>
+
+          <div class="accordion-wrapper">
+            <div class="question-wrapper">
+              <img
+                class="arrow-icon"
+                src="./images/icon-arrow-down.svg"
+                alt="Arrow icon"
+              />
+              <h2 class="question">What is the maximum file upload size?</h2>
+            </div>
+            <p class="answer">
+              No more than 2GB. All files in your account must fit your allotted
+              storage space.
+            </p>
+            <hr />
+          </div>
+
+          <div class="accordion-wrapper">
+            <div class="question-wrapper">
+              <img
+                class="arrow-icon"
+                src="./images/icon-arrow-down.svg"
+                alt="Arrow icon"
+              />
+              <h2 class="question">How do I reset my password?</h2>
+            </div>
+            <p class="answer">
+              Click “Forgot password” from the login page or “Change password”
+              from your profile page. A reset link will be emailed to you.
+            </p>
+            <hr />
+          </div>
+
+          <div class="accordion-wrapper">
+            <div class="question-wrapper">
+              <img
+                class="arrow-icon"
+                src="./images/icon-arrow-down.svg"
+                alt="Arrow icon"
+              />
+              <h2 class="question">Can I cancel my subscription?</h2>
+            </div>
+            <p class="answer">
+              Yes! Send us a message and we’ll process your request no questions
+              asked.
+            </p>
+            <hr />
+          </div>
+
+          <div class="accordion-wrapper">
+            <div class="question-wrapper">
+              <img
+                class="arrow-icon"
+                src="./images/icon-arrow-down.svg"
+                alt="Arrow icon"
+              />
+              <h2 class="question">Do you provide additional support?</h2>
+            </div>
+            <p class="answer">
+              Chat and email support is available 24/7. Phone lines are open
+              during normal business hours.
+            </p>
+            <hr />
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="attribution-wrapper">
